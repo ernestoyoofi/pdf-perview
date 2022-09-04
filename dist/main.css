@@ -13,6 +13,18 @@
   box-shadow: rgba(0,0,0,0.3) 0px 0px 3px;
   z-index: 999999;
 }
+.loading_prepar input {
+  margin-left: 3px;
+  padding: 4px 8px;
+  border: 1px solid #d0d0d0;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: .3s;
+}
+.loading_prepar input:focus {
+  outline: 4px solid rgba(0, 34, 255, 0.1);
+  box-shadow: rgba(0, 34, 255, 0.1) 0px 0px 3px;
+}
 .head-cl button, .head-cl select {
   padding: 3px 12px;
   border: 1px solid #d0d0d0;

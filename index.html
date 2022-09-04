@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF View</title>
+  <link rel="stylesheet" href="/dist/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=JetBrains+Mono:wght@200;300;400&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="head-cl">
+    <button id="btn-pre">Previous</button>
+    <button id="btn-next">Next</button>
+    <select id="btn-scale">
+      <option value="0.5">Scale 0.5</option>
+      <option value="1" selected>Scale 1</option>
+      <option value="1.5">Scale 1.5</option>
+      <option value="2">Scale 2</option>
+      <option value="2.5">Scale 2.5</option>
+      <option value="3">Scale 3</option>
+    </select>
+    &nbsp; &nbsp;
+    <span>Page: <a id="pages_num">1 / -</a></span>
+    <a href pdf-dwn download target="_blank" style="margin-left: 9px;">Download</a>
+  </div>
+  <div class="respon-box">
+    <canvas id="the-canvas" width="100%"></canvas>
+    <div class="loading_prepar">
+      <div class="loading_container" style="position: absolute; margin-top: -4px; "><svg class="loading_svg"><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" class="loading_cyc"/></svg></div>
+      <span>Waiting For...</span>
+    </div>
+  </div>
+  <script src="/dist/pdf.build.js"></script>
+  <script src="/dist/pdf.run.js"></script>
+  <script src="/dist/app.js"></script>
+</body>
+</html>

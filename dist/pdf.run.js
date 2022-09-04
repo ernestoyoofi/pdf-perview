@@ -9,7 +9,7 @@ function PDF(urls, option) {
   var url = urls
   var pdfjsLib = window['pdfjs-dist/build/pdf'];
   // The workerSrc property shall be specified.
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '/dist/pdf.worker.js';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = './dist/pdf.worker.js';
   let pdfDoc = null
   let pageNum = 1
   let pageRendering = false
